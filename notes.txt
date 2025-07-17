@@ -1,0 +1,27 @@
+I have two related programs:
+
+Jison.js — an LALR(1) lookahead parser generator written in JavaScript.
+
+sonar.coffee — an intended clone of Jison.js, rewritten in idiomatic CoffeeScript.
+
+I need help with the following:
+
+Understand Jison.js: Analyze the code to understand the full structure and flow of the parser generation algorithm, including:
+
+The major functions and their roles
+
+Key variables and data structures
+
+How the LALR(1) algorithm is implemented step-by-step
+
+Overall logic and purpose of each section
+
+Compare with sonar.coffee: On a function-by-function (or logical unit) basis, verify that sonar.coffee faithfully implements the same algorithm and produces equivalent output.
+
+The CoffeeScript version should use idiomatic constructs (e.g., comprehensions, implicit returns, chained calls) and not look like a line-by-line translation.
+
+However, the logic, structure, and algorithmic behavior should remain consistent with the original.
+
+The goal is to ensure that sonar.coffee is a clean, idiomatic, but algorithmically identical implementation of Jison.js. Please assist with both understanding and validating the equivalence.
+
+==
