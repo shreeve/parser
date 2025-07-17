@@ -24,4 +24,14 @@ However, the logic, structure, and algorithmic behavior should remain consistent
 
 The goal is to ensure that sonar.coffee is a clean, idiomatic, but algorithmically identical implementation of Jison.js. Please assist with both understanding and validating the equivalence.
 
-==
+==[ Interesting bugs ]==
+
+* For loops:
+
+for i in (j..0) # this will work and it'll figure out to count up or down
+for i in (j..0) by -1 # this hint helps tell it the direction
+
+* Property access for array membership:
+
+item in array  # don't use item of object!!!
+prop of object # don't use prop in array!!!
