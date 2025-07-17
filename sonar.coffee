@@ -353,6 +353,7 @@ class LALRGenerator
       for i in [r.handle.length - 1..0]
         if not (r.handle[i] in nonterminals) and r.handle[i] in operators
           r.precedence = operators[r.handle[i]].precedence
+        if tok not of nonterminals and tok of operators # properties not arrays!
           break
 
     productions.push r
