@@ -350,9 +350,9 @@ class LALRGenerator
       r = new Production symbol, rhs, productions.length + 1
 
     if r.precedence is 0
-      for i in [(r.handle.length - 1)..0] by -1 # hint is helpful
+      for i in [(r.handle.length - 1)..0] by -1
         tok = r.handle[i]
-        if tok not of nonterminals and tok of operators # properties not arrays!
+        if tok of operators and tok not of nonterminals
           r.precedence = operators[tok].precedence
           break
 
