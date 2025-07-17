@@ -39,9 +39,12 @@ switch want
       tokens    : grammar.tokens
       start     : grammar.start
 
+# ==[ Show data elements ]==
+#
 # d Object.keys(x).sort()
+# d (if part then x[part] else x)
 
-d (if part then x[part] else x)
+process.stdout.write(x.generate())
 
 # ==============================================================================
 #
