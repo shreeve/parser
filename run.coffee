@@ -49,14 +49,16 @@ d (if part then x[part] else x)
 # symbols
 # terminals
 # terminals_
-#
-# nonterminals
-#
 # operators
+#
+# nonterminals [NO PRECEDENCE INFO!] <== FIXED!!!
 # productions
 # productionTable
-# startSymbol
 # terminalMap
+#
+# stateTable
+#
+# startSymbol
 #
 # computeLookaheads
 # conflicts
@@ -71,5 +73,4 @@ d (if part then x[part] else x)
 # performAction
 # resolutions
 # states
-# stateTable
 # yy
