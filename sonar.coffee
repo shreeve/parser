@@ -769,8 +769,8 @@ class LALRGenerator
       stateTable: #{tableCode.moduleCode},
       defaultActions: #{JSON.stringify(@defaultActions).replace /"([0-9]+)":/g, "$1:"},
       performAction: #{@performAction},
-      parseError: #{@parseError},
-      parse: #{@parse}
+      parseError: function #{@parseError},
+      parse: function #{@parse}
     }"""
 
     {commonCode: tableCode.commonCode, moduleCode}
