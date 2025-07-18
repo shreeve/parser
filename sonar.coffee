@@ -574,6 +574,7 @@ class LALRGenerator
       for item in itemSet.list when item.nextSymbol is @EOF
         # Skip if EOF symbol not in symbolMap (prevents undefined keys)
         continue unless @symbolMap[@EOF]?
+
         state[@symbolMap[@EOF]] = [ACCEPT]
 
       # Set reductions
